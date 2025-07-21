@@ -5,6 +5,12 @@ body {
   background-size: cover;
   backdrop-filter: blur(6px);
   color: #333;
+
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+body.loaded {
+  opacity: 1;
 }
 
 header {
@@ -30,4 +36,19 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
