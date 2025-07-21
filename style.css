@@ -57,3 +57,11 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
+.content {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.content.loaded {
+  opacity: 1;
+}
