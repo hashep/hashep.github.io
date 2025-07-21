@@ -1,12 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background: url('https://media.istockphoto.com/id/926196952/photo/beautiful-nature-background.jpg?s=170667a&w=0&k=20&c=3CI8wa6kKzgUv09X_rQhermyjeGhaAlp9HiAe9v65rE=') no-repeat center center fixed;
-  background-size: cover;
-  backdrop-filter: blur(6px);
-  color: #333;
-}
-
 header {
   background-color: rgba(52, 58, 64, 0.7);     /* 약간 어두운 반투명 */
   color: white;
@@ -17,15 +8,38 @@ header {
   -webkit-backdrop-filter: blur(8px);
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  color: #333;
+
+  /* 배경 제거 → background는 따로 분리해서 아래 .background에 둠 */
+  position: relative;
+  z-index: 0;  /* 내용보다 앞에 있게끔 기준값 설정 */
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('https://media.istockphoto.com/id/926196952/photo/beautiful-nature-background.jpg?s=170667a&w=0&k=20&c=3CI8wa6kKzgUv09X_rQhermyjeGhaAlp9HiAe9v65rE=') no-repeat center center;
+  background-size: cover;
+
+  filter: blur(8px);  /* 배경만 흐릿하게 */
+  z-index: -1;        /* 내용보다 뒤에 깔리도록 */
+}
+
+
 section {
   margin-top: 30px;
   padding: 15px;
-  border-left: 5px solid #007bff;
-  background-color: rgba(255, 255, 255, 0.65);  /* 반투명 흰색 */
-  border-radius: 10px;
+  border-left: 3px solid rgba(0, 123, 255, 0.3); /* 연하고 얇게 */
+  background-color: rgba(255, 255, 255, 0.8); /* 불투명도 살짝만 높여서 글자 선명하게 */
+  backdrop-filter: blur(4px); /* blur를 줄이거나 제거 */
+  border-radius: 16px;
 
-  backdrop-filter: blur(10px);                 /* 배경 흐림 */
-  -webkit-backdrop-filter: blur(10px);         /* Safari용 */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);    /* 그림자 */
 }
 
