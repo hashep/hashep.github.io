@@ -1,12 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   margin: 40px;
-  background: url('your-image.jpg') no-repeat center center fixed;
+  background: url('https://media.istockphoto.com/id/926196952/photo/beautiful-nature-background.jpg?s=170667a&w=0&k=20&c=3CI8wa6kKzgUv09X_rQhermyjeGhaAlp9HiAe9v65rE=') no-repeat center center fixed;
   background-size: cover;
   backdrop-filter: blur(6px);
   color: #333;
 }
-
 
 header {
   background-color: #343a40;
