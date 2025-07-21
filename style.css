@@ -1,9 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   margin: 40px;
-  background-color: #f8f9fa;
+  background: url('your-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(6px);
   color: #333;
 }
+
 
 header {
   background-color: #343a40;
