@@ -10,6 +10,7 @@ GitHub Pages로 배포되어 있습니다.
 
 - HTML5
 - CSS3
+- JavaScript
 - GitHub Pages
 
 ## 만든 이유
