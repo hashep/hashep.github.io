@@ -27,9 +27,16 @@ body {
   background: url('https://media.istockphoto.com/id/926196952/photo/beautiful-nature-background.jpg?s=170667a&w=0&k=20&c=3CI8wa6kKzgUv09X_rQhermyjeGhaAlp9HiAe9v65rE=') no-repeat center center;
   background-size: cover;
 
-  filter: blur(8px);  /* 배경만 흐릿하게 */
-  z-index: -1;        /* 내용보다 뒤에 깔리도록 */
+  filter: blur(8px);
+  z-index: -1;
+
+  /* 추가된 속성들 */
+  overflow: hidden;
+  clip-path: inset(0);
+  mask-image: none;
+  -webkit-mask-image: none;
 }
+
 
 
 section {
@@ -88,8 +95,7 @@ a:hover {
 
   /* 어두운 반투명 배경 추가 */
   background-color: rgba(0, 0, 0, 0.4); /* 기존보다 대비 강화 */
-
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.7); /* 더 진하고 선명한 검정 테두리 */
   color: white;
   text-decoration: none;
   border-radius: 10px;
