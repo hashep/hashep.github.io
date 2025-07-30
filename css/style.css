@@ -1,7 +1,7 @@
 header {
   background-color: rgba(52, 58, 64, 0.7);     /* 약간 어두운 반투명 */
   color: white;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   text-align: center;
   backdrop-filter: blur(8px);
@@ -51,6 +51,12 @@ a:hover {
   text-decoration: underline;
 }
 
+.main-area {
+  flex: 1;  /* 남은 공간 차지 */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 세로 가운데 정렬 */
+}
 .main-container {
   position: absolute;
   top: 50%;
@@ -96,6 +102,9 @@ a:hover {
 .content {
   opacity: 0;
   transition: opacity 1s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .content.loaded {
   opacity: 1;
