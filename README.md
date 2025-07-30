@@ -4,7 +4,7 @@
 HTML, CSS를 사용해 제작되었으며,
 GitHub Pages로 배포되어 있습니다.
 
-👉 <a href="https://hashep.github.io/" target="_blank">Website</a>
+👉 [Website](https://hashep.github.io/)
 
 ## 사용 기술
 

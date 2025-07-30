@@ -60,10 +60,26 @@ a:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  backdrop-filter: blur(8px);
+}
+.main-button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
 }
 
 .content {
