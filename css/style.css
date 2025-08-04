@@ -17,7 +17,9 @@ header {
   color: white;
   padding: 40px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  /* 아래 그림자를 강하게 설정 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* 메인 콘텐츠 */
