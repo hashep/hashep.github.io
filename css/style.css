@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  font-weight: 400; /* 기본보다 약간 두껍게 */
+  font-weight: 600; /* 기본보다 약간 두껍게 */
   font-size: 1.05rem; /* 16px → 17px 정도 */
   margin: 0;
   padding: 0;
@@ -69,7 +69,7 @@ header {
 
 .main-button:hover, .button:hover {
   background-color: #333;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .centered-list {
