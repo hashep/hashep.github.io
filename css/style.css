@@ -13,10 +13,11 @@ body {
 
 /* 헤더 스타일 */
 header {
-  background-color: #444; /* 진회색 배경 */
+  background-color: #444;
   color: white;
   padding: 40px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* 메인 콘텐츠 */
