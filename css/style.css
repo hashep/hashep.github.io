@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #000000, #ced4da); /* 회색 톤 그라디언트 */
+  background: linear-gradient(to bottom, #7c7c7c, #ffffff); /* 회색 톤 그라디언트 */
   color: #333;
   min-height: 100vh;
 }
@@ -15,26 +15,26 @@ body {
 header {
   background-color: #444;
   color: white;
-  padding: 20px 60px; /* 위아래는 얇고 좌우는 넓게 */
+  padding: 20px 60px;
   text-align: center;
-  margin: 40px auto;
-  border-radius: 50px; /* 타원형 느낌 */
-  width: fit-content; /* 내용에 맞게 자동 너비 */
+  margin: 60px auto 40px; /* 상단 여백 크게 */
+  border-radius: 50px;
+  width: fit-content;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 
+
 /* 메인 콘텐츠 */
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* ← 이게 중요! 세로 중앙 정렬 */
-  align-items: center;       /* 가로 중앙 정렬 */
-  min-height: 100vh;
-  padding: 40px 20px;
+  align-items: center;
+  padding: 0 20px 60px; /* 아래쪽 여백 주기 */
 }
+
 
 /* 메인 영역 가운데 정렬 */
 .main-area {
