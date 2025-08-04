@@ -1,8 +1,10 @@
 body {
   font-family: Arial, sans-serif;
+  font-weight: 400; /* 기본보다 약간 두껍게 */
+  font-size: 1.05rem; /* 16px → 17px 정도 */
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #333333, #888888); /* 회색 톤 그라디언트 */
+  background: linear-gradient(to bottom, #333333, #777777); /* 회색 톤 그라디언트 */
   color: #333;
   min-height: 100vh;
 }
@@ -40,7 +42,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px; /* 이 줄 추가 */
+  margin-top: 225px; /* 이 줄 추가 */
 }
 
 /* 버튼 정렬 */
