@@ -40,7 +40,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px; /* 이 줄 추가 */
+  margin-top: 100px; /* 이 줄 추가 */
 }
 
 /* 버튼 정렬 */
