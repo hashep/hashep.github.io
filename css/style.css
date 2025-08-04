@@ -1,124 +1,80 @@
-header {
-  background-color: rgba(52, 58, 64, 0.7);     /* 약간 어두운 반투명 */
-  color: white;
-  padding: 40px;
-  border-radius: 10px;
-  text-align: center;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
 body {
   font-family: Arial, sans-serif;
-  margin: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* 연한 회색 배경 */
   color: #333;
-
-  /* 배경 제거 → background는 따로 분리해서 아래 .background에 둠 */
-  position: relative;
-  z-index: 0;  /* 내용보다 앞에 있게끔 기준값 설정 */
+  min-height: 100vh;
 }
+
 .background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background: url('https://media.istockphoto.com/id/926196952/photo/beautiful-nature-background.jpg?s=170667a&w=0&k=20&c=3CI8wa6kKzgUv09X_rQhermyjeGhaAlp9HiAe9v65rE=') no-repeat center center;
-  background-size: cover;
-
-  filter: blur(8px);
-  z-index: -1;
-
-  /* 추가된 속성들 */
-  overflow: hidden;
-  clip-path: inset(0);
-  mask-image: none;
-  -webkit-mask-image: none;
+  display: none; /* 배경 이미지 완전히 제거 */
 }
 
+/* 헤더 스타일 */
+header {
+  background-color: #444; /* 진회색 배경 */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
 
+/* 메인 콘텐츠 */
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  opacity: 1; /* 바로 보이게 */
+}
 
+/* 메인 영역 가운데 정렬 */
+.main-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 버튼 정렬 */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* 버튼 공통 스타일 */
+.main-button, .button {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: #555; /* 어두운 회색 배경 */
+  border: 2px solid #333; /* 검정 테두리 */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.main-button:hover, .button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* 섹션 (서브 페이지용) */
 section {
-  margin-top: 30px;
-  padding: 15px;
-  border-left: 3px solid rgba(0, 123, 255, 0.3); /* 연하고 얇게 */
-  background-color: rgba(255, 255, 255, 0.8); /* 불투명도 살짝만 높여서 글자 선명하게 */
-  backdrop-filter: blur(4px); /* blur를 줄이거나 제거 */
-  border-radius: 16px;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);    /* 그림자 */
+  background-color: white;
+  padding: 24px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 a {
   color: #007bff;
-  text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-}
-
-.main-area {
-  flex: 1;  /* 남은 공간 차지 */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* 세로 가운데 정렬 */
-}
-.main-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 정확히 중앙으로 */
-  display: flex;
-  flex-direction: column;           /* 세로 방향 정렬 */
-  gap: 20px;                        /* 버튼 간 간격 */
-  align-items: center;             /* 가운데 정렬 */
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.main-button {
-  padding: 15px 30px;
-  font-size: 1.2rem;
-
-  /* 어두운 반투명 배경 추가 */
-  background-color: rgba(0, 0, 0, 0.4); /* 기존보다 대비 강화 */
-  border: 2px solid rgba(0, 0, 0, 0.7); /* 더 진하고 선명한 검정 테두리 */
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 그림자로 입체감 강화 */
-}
-
-.main-button:hover {
-  background-color: rgba(0, 0, 0, 0.6); /* hover 시 더 진하게 */
-  transform: scale(1.2);
-}
-
-.content {
-  opacity: 0;
-  transition: opacity 1s ease;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-.content.loaded {
-  opacity: 1;
 }
