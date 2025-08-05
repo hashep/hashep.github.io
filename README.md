@@ -12,7 +12,3 @@ GitHub Pages로 배포되어 있습니다.
 - CSS3
 - JavaScript
 - GitHub Pages
-
-## 만든 이유
-
-취업 준비 중, 포트폴리오 용도로 제작하였습니다.
